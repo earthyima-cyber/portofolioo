@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Ima</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f9fc;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(135deg,#1e293b,#4f46e5);
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero h3{
+    font-weight:300;
+    margin-top:10px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:white;
+    color:#4f46e5;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.2rem;
+    color:#1e293b;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+    align-items:center;
+}
+
+.profile{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:4rem;
+    font-weight:bold;
+    margin:auto;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#4f46e5;
+    margin-bottom:10px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill{
+    background:#4f46e5;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+}
+
+.contact{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Ima</h1>
+        <h3>Mahasiswa | Future Professional</h3>
+        <p>
+            Mahasiswa yang memiliki semangat tinggi dalam belajar, berinovasi,
+            dan mengembangkan kemampuan di bidang teknologi, bisnis, serta
+            manajemen proyek. Berkomitmen untuk terus berkembang dan memberikan
+            dampak positif melalui kreativitas dan kerja sama tim.
+        </p>
+        <a href="#about" class="btn">Lihat Profil</a>
+    </div>
+</header>
+
+<section id="about">
+    <div class="section-title">
+        <h2>Tentang Saya</h2>
+    </div>
+
+    <div class="about">
+        <div class="profile">I</div>
+
+        <div>
+            <p>
+                Saya adalah Ima, seorang mahasiswa yang aktif dalam berbagai
+                kegiatan akademik maupun organisasi. Saya memiliki minat pada
+                bidang teknologi digital, pengembangan bisnis, dan desain
+                kreatif. Dengan kemampuan komunikasi yang baik dan semangat
+                belajar yang tinggi, saya selalu berusaha memberikan hasil
+                terbaik dalam setiap kesempatan.
+            </p>
+
+            <br>
+
+            <p>
+                Saya percaya bahwa pembelajaran tidak hanya berasal dari ruang
+                kelas, tetapi juga dari pengalaman nyata, kolaborasi, dan
+                tantangan yang dihadapi dalam kehidupan sehari-hari.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Pendidikan</h2>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>S1 Manajemen</h3>
+            <p>
+                Universitas Nusantara Indonesia
+                <br>
+                2022 - Sekarang
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>SMA Negeri Prestasi</h3>
+            <p>
+                Jurusan IPS
+                <br>
+                Lulus Tahun 2022
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Pengalaman Kerja</h2>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Digital Marketing Intern</h3>
+            <p>
+                PT Kreativa Digital (2024)
+                <br><br>
+                Membantu pengelolaan media sosial perusahaan,
+                membuat konten promosi, serta menganalisis performa
+                kampanye digital.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Project Assistant</h3>
+            <p>
+                CV Maju Bersama (2023)
+                <br><br>
+                Mendukung koordinasi proyek, pengelolaan dokumen,
+                dan komunikasi dengan klien untuk memastikan
+                kelancaran operasional.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Pencapaian & Karir</h2>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Mahasiswa Berprestasi</h3>
+            <p>
+                Masuk 10 besar mahasiswa berprestasi tingkat fakultas
+                pada tahun 2024.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Juara Business Plan</h3>
+            <p>
+                Meraih Juara 2 Kompetisi Business Plan Nasional
+                Tahun 2024.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Ketua Organisasi Mahasiswa</h3>
+            <p>
+                Memimpin program pengembangan mahasiswa dan kegiatan
+                sosial kampus selama satu periode.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Keahlian</h2>
+    </div>
+
+    <div class="skills">
+        <div class="skill">Leadership</div>
+        <div class="skill">Public Speaking</div>
+        <div class="skill">Digital Marketing</div>
+        <div class="skill">Microsoft Office</div>
+        <div class="skill">Canva Design</div>
+        <div class="skill">Teamwork</div>
+        <div class="skill">Project Management</div>
+        <div class="skill">Content Creation</div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="section-title">
+        <h2 style="color:white;">Kontak</h2>
+    </div>
+
+    <p>📧 ima.portfolio@email.com</p>
+    <p>📱 +62 812-3456-7890</p>
+    <p>📍 Makassar, Indonesia</p>
+</section>
+
+<footer>
+    <p>© 2026 Portfolio Ima. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
